@@ -7,13 +7,6 @@ Nandan Rao
 
 ---
 
-## What we will cover...
-
-1. What is Python?
-2. Running Python.
-3. Writing Python.
-
----
 
 ## What is Python?
 
@@ -23,6 +16,27 @@ Python refers to both:
 2. A programming language.
 
 The program's purpose is to **interpret** the language and convert it into instructions for a computer.
+
+---
+
+
+## Social Sciences meets ML?
+<!-- _class: centered -->
+
+> When solving a problem of interest, do not solve a more general problem as an intermediate step. Try to get the answer that you really need, but not a more general one.    
+
+--Vladimir Vapnik
+
+
+
+
+---
+
+## Social Sciences meets ML?
+<!-- _class: centered -->
+
+Statistical Modelling: The Two Cultures
+[https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726)
 
 ---
 

@@ -8,10 +8,10 @@
  * @size 4:3 960px 720px
  */
 
-// $color-light: #F8F5EC;
-$color-light: #DDD;
+/* $color-light: #F8F5EC; */
+$color-light: #f5f2eb;
+/* $color-light: #DDD; */
 $color-dark: #666;
-// $color-dark: #455a64;
 $color-primary: #AE4D29;
 $color-secondary:#009AA6;
 $color-tertiary: #B19428;
@@ -148,6 +148,18 @@ section {
   border-top: solid 10px $color-secondary;
 
   @include color-scheme($color-light, $color-dark, $color-primary, $color-secondary);
+
+  &.centered {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    h1, h2, h3, h4, * {
+      margin: 0;
+      flex-grow: 1;
+    }
+  }
 
   &.sidecode {
     pre {

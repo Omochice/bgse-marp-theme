@@ -7,6 +7,8 @@
  * @auto-scaling true
  * @size 4:3 960px 720px
  */
+/* $color-light: #F8F5EC; */
+/* $color-light: #DDD; */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300;400&family=Roboto+Slab:wght@300;400&&display=swap");
 @import-theme "gaia";
 h1,
@@ -77,7 +79,7 @@ section {
   border-right: solid 10px #009AA6;
   border-top: solid 10px #009AA6;
   color: #666;
-  background-color: #DDD;
+  background-color: #f5f2eb;
 }
 section a,
 section mark {
@@ -85,7 +87,7 @@ section mark {
 }
 section code {
   background: #666;
-  color: #DDD;
+  color: #f5f2eb;
 }
 section strong {
   color: #009AA6;
@@ -107,7 +109,7 @@ section footer,
 section section::after,
 section blockquote::before,
 section blockquote::after {
-  color: #7e7e7e;
+  color: #838281;
 }
 section table th,
 section table td {
@@ -115,11 +117,20 @@ section table td {
 }
 section table thead th {
   background: #666;
-  color: #DDD;
+  color: #f5f2eb;
 }
 section table tbody > tr:nth-child(odd) td,
 section table tbody > tr:nth-child(odd) th {
   background: rgba(102, 102, 102, 0.1);
+}
+section.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.centered h1, section.centered h2, section.centered h3, section.centered h4, section.centered * {
+  margin: 0;
+  flex-grow: 1;
 }
 section.sidecode pre {
   display: inline-block;
