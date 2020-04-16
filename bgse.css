@@ -79,7 +79,7 @@ section {
   border-right: solid 10px #009AA6;
   border-top: solid 10px #009AA6;
   color: #666;
-  background-color: #f5f2eb;
+  background-color: #f5f3ed;
 }
 section a,
 section mark {
@@ -87,7 +87,7 @@ section mark {
 }
 section code {
   background: #666;
-  color: #f5f2eb;
+  color: #f5f3ed;
 }
 section strong {
   color: #009AA6;
@@ -117,7 +117,7 @@ section table td {
 }
 section table thead th {
   background: #666;
-  color: #f5f2eb;
+  color: #f5f3ed;
 }
 section table tbody > tr:nth-child(odd) td,
 section table tbody > tr:nth-child(odd) th {
