@@ -10,8 +10,7 @@
 
 /* $color-light: #F8F5EC; */
 $color-light: #f5f3ed;
-/* $color-light: #DDD; */
-$color-dark: #666;
+$color-dark: #43453b;
 $color-primary: #AE4D29;
 $color-secondary:#009AA6;
 $color-tertiary: #B19428;
@@ -149,6 +148,10 @@ section {
 
   @include color-scheme($color-light, $color-dark, $color-primary, $color-secondary);
 
+  &[data-marpit-advanced-background=content] {
+    border-right: none;
+  }
+
   &.centered {
     display: flex;
     flex-direction: column;
@@ -166,7 +169,7 @@ section {
       display: inline-block;
       float: right;
       width: 49%;
-      margin: 2.5rem 0 100vh 2%
+      margin: 1em 0 100vh 2%
     }
     ol, ul, p {
       font-size: 30px;
@@ -174,13 +177,36 @@ section {
     }
   }
 
+  &.double {
+    ol:first-of-type, ul:first-of-type, p:first-of-type, table:first-of-type {
+      display: inline-block;
+      float: right;
+      width: 49%;
+      margin: 2.5rem 0 100vh 2%;
+    }
+    ol:not(:first-of-type), ul:not(:first-of-type), p:not(:first-of-type), table:not(:first-of-type) {
+      display: inline-block;
+      font-size: 30px;
+      width: 49%;
+      margin: 2.5rem 0 0 0;
+    }
+  }
+
+  &.small-text {
+    ol, ul, p {
+      font-size: 30px;
+    }
+  }
 
   &.sidemath {
     p:first-of-type {
       display: inline-block;
+      border-left: 1px solid $color-primary;
+      padding-left: 20px;
+      height: 470px;
       float: right;
       width: 49%;
-      margin: 2.5rem 0 100vh 2%
+      margin: 1em 0 100vh 2%
     }
     ol, ul, p {
       font-size: 30px;

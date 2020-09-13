@@ -8,7 +8,6 @@
  * @size 4:3 960px 720px
  */
 /* $color-light: #F8F5EC; */
-/* $color-light: #DDD; */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300;400&family=Roboto+Slab:wght@300;400&&display=swap");
 @import-theme "gaia";
 h1,
@@ -78,7 +77,7 @@ section {
   word-wrap: break-word;
   border-right: solid 10px #009AA6;
   border-top: solid 10px #009AA6;
-  color: #666;
+  color: #43453b;
   background-color: #f5f3ed;
 }
 section a,
@@ -86,7 +85,7 @@ section mark {
   color: #009AA6;
 }
 section code {
-  background: #666;
+  background: #43453b;
   color: #f5f3ed;
 }
 section strong {
@@ -102,26 +101,29 @@ section h6 {
   font-weight: 300;
 }
 section pre > code {
-  background: #666;
+  background: #43453b;
 }
 section header,
 section footer,
 section section::after,
 section blockquote::before,
 section blockquote::after {
-  color: #838281;
+  color: #67685f;
 }
 section table th,
 section table td {
-  border-color: #666;
+  border-color: #43453b;
 }
 section table thead th {
-  background: #666;
+  background: #43453b;
   color: #f5f3ed;
 }
 section table tbody > tr:nth-child(odd) td,
 section table tbody > tr:nth-child(odd) th {
-  background: rgba(102, 102, 102, 0.1);
+  background: rgba(67, 69, 59, 0.1);
+}
+section[data-marpit-advanced-background=content] {
+  border-right: none;
 }
 section.centered {
   display: flex;
@@ -136,17 +138,35 @@ section.sidecode pre {
   display: inline-block;
   float: right;
   width: 49%;
-  margin: 2.5rem 0 100vh 2%;
+  margin: 1em 0 100vh 2%;
 }
 section.sidecode ol, section.sidecode ul, section.sidecode p {
   font-size: 30px;
   width: 49%;
 }
-section.sidemath p:first-of-type {
+section.double ol:first-of-type, section.double ul:first-of-type, section.double p:first-of-type, section.double table:first-of-type {
   display: inline-block;
   float: right;
   width: 49%;
   margin: 2.5rem 0 100vh 2%;
+}
+section.double ol:not(:first-of-type), section.double ul:not(:first-of-type), section.double p:not(:first-of-type), section.double table:not(:first-of-type) {
+  display: inline-block;
+  font-size: 30px;
+  width: 49%;
+  margin: 2.5rem 0 0 0;
+}
+section.small-text ol, section.small-text ul, section.small-text p {
+  font-size: 30px;
+}
+section.sidemath p:first-of-type {
+  display: inline-block;
+  border-left: 1px solid #AE4D29;
+  padding-left: 20px;
+  height: 470px;
+  float: right;
+  width: 49%;
+  margin: 1em 0 100vh 2%;
 }
 section.sidemath ol, section.sidemath ul, section.sidemath p {
   font-size: 30px;
