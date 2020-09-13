@@ -157,7 +157,7 @@ section.double ol:not(:first-of-type), section.double ul:not(:first-of-type), se
   margin: 2.5rem 0 0 0;
 }
 section.small-text ol, section.small-text ul, section.small-text p {
-  font-size: 30px;
+  font-size: 28px;
 }
 section.sidemath p:first-of-type {
   display: inline-block;
