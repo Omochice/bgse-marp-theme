@@ -1,8 +1,6 @@
 /*!
- * Marp / Marpit Gaia theme.
- *
- * @theme gaia
- * @author Yuki Hattori
+ * @theme bgse
+ * @author nandanrao
  *
  * @auto-scaling true
  * @size 4:3 960px 720px
@@ -17,54 +15,43 @@ h4,
 h5,
 h6 {
   font-family: "Roboto Slab", serif;
-  margin: 0.5em 0 0 0;
-}
-h1 strong,
-h2 strong,
-h3 strong,
-h4 strong,
-h5 strong,
-h6 strong {
-  font-weight: inherit;
-}
+  margin: 0.5em 0 0 0; }
+  h1 strong,
+  h2 strong,
+  h3 strong,
+  h4 strong,
+  h5 strong,
+  h6 strong {
+    font-weight: inherit; }
 
 h1 {
-  font-size: 2.44em;
-}
+  font-size: 2.44em; }
 
 h2 {
-  font-size: 1.56em;
-}
+  font-size: 1.56em; }
 
 h3 {
-  font-size: 1.25em;
-}
+  font-size: 1.25em; }
 
 h4 {
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 h5 {
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 h6 {
-  font-size: 0.9em;
-}
+  font-size: 0.9em; }
 
 p,
 blockquote {
-  margin: 1em 0 0 0;
-}
+  margin: 1em 0 0 0; }
 
 ul > li,
 ol > li {
-  margin: 0.3em 0 0 0;
-}
-ul > li > p,
-ol > li > p {
-  margin: 0.6em 0 0 0;
-}
+  margin: 0.3em 0 0 0; }
+  ul > li > p,
+  ol > li > p {
+    margin: 0.6em 0 0 0; }
 
 section {
   font-size: 35px;
@@ -75,156 +62,143 @@ section {
   padding: 70px;
   width: 1280px;
   word-wrap: break-word;
-  border-right: solid 10px #009AA6;
-  border-top: solid 10px #009AA6;
+  border-right: solid 10px #009aa6;
+  border-top: solid 10px #009aa6;
   color: #43453b;
-  background-color: #f5f3ed;
-}
-section a,
-section mark {
-  color: #009AA6;
-}
-section code {
-  background: #43453b;
-  color: #f5f3ed;
-}
-section strong {
-  color: #009AA6;
-}
-section h1,
-section h2,
-section h3,
-section h4,
-section h5,
-section h6 {
-  color: #AE4D29;
-  font-weight: 300;
-}
-section pre > code {
-  background: #43453b;
-}
-section header,
-section footer,
-section section::after,
-section blockquote::before,
-section blockquote::after {
-  color: #67685f;
-}
-section table th,
-section table td {
-  border-color: #43453b;
-}
-section table thead th {
-  background: #43453b;
-  color: #f5f3ed;
-}
-section table tbody > tr:nth-child(odd) td,
-section table tbody > tr:nth-child(odd) th {
-  background: rgba(67, 69, 59, 0.1);
-}
-section[data-marpit-advanced-background=content] {
-  border-right: none;
-}
-section.centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-section.centered h1, section.centered h2, section.centered h3, section.centered h4, section.centered * {
-  margin: 0;
-  flex-grow: 1;
-}
-section.sidecode pre {
-  display: inline-block;
-  float: right;
-  width: 49%;
-  margin: 1em 0 100vh 2%;
-}
-section.sidecode ol, section.sidecode ul, section.sidecode p {
-  font-size: 30px;
-  width: 49%;
-}
-section.double ol:first-of-type, section.double ul:first-of-type, section.double p:first-of-type, section.double table:first-of-type {
-  display: inline-block;
-  float: right;
-  width: 49%;
-  margin: 2.5rem 0 100vh 2%;
-}
-section.double ol:not(:first-of-type), section.double ul:not(:first-of-type), section.double p:not(:first-of-type), section.double table:not(:first-of-type) {
-  display: inline-block;
-  font-size: 30px;
-  width: 49%;
-  margin: 2.5rem 0 0 0;
-}
-section.small-text ol, section.small-text ul, section.small-text p, section.small-text tr {
-  font-size: 30px;
-}
-section.sidemath p:first-of-type {
-  display: inline-block;
-  border-left: 1px solid #AE4D29;
-  padding-left: 20px;
-  height: 470px;
-  float: right;
-  width: 49%;
-  margin: 1em 0 100vh 2%;
-}
-section.sidemath ol, section.sidemath ul, section.sidemath p {
-  font-size: 30px;
-  width: 49%;
-}
-section.lead {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  border: none;
-  border-left: solid 10px #AE4D29;
-  border-bottom: solid 10px #AE4D29;
-}
-section.lead h1 {
-  padding: 1.5em 0;
-}
-section.lead h1,
-section.lead h2,
-section.lead h3,
-section.lead h4,
-section.lead h5,
-section.lead h6 {
-  text-align: center;
-  color: #009AA6;
-}
-section.lead h1 svg[data-marp-fitting=svg],
-section.lead h2 svg[data-marp-fitting=svg],
-section.lead h3 svg[data-marp-fitting=svg],
-section.lead h4 svg[data-marp-fitting=svg],
-section.lead h5 svg[data-marp-fitting=svg],
-section.lead h6 svg[data-marp-fitting=svg] {
-  --preserve-aspect-ratio: xMidYMid meet;
-}
-section.lead p {
-  text-align: center;
-}
-section.lead blockquote > h1,
-section.lead blockquote > h2,
-section.lead blockquote > h3,
-section.lead blockquote > h4,
-section.lead blockquote > h5,
-section.lead blockquote > h6,
-section.lead blockquote > p {
-  text-align: left;
-}
-section.lead blockquote svg[data-marp-fitting=svg]:not([data-marp-fitting-math]) {
-  --preserve-aspect-ratio: xMinYMin meet;
-}
-section.lead ul > li > p,
-section.lead ol > li > p {
-  text-align: left;
-}
-section.lead table {
-  margin-left: auto;
-  margin-right: auto;
-}
+  background-color: #f5f3ed; }
+  section a,
+  section mark {
+    color: #009aa6; }
+  section code {
+    background: #43453b;
+    color: #f5f3ed; }
+  section strong {
+    color: #009aa6; }
+  section h1,
+  section h2,
+  section h3,
+  section h4,
+  section h5,
+  section h6 {
+    color: #ae4d29;
+    font-weight: 300; }
+  section pre > code {
+    background: #43453b; }
+  section header,
+  section footer,
+  section section::after,
+  section blockquote::before,
+  section blockquote::after {
+    color: #67685f; }
+  section table th,
+  section table td {
+    border-color: #43453b; }
+  section table thead th {
+    background: #43453b;
+    color: #f5f3ed; }
+  section table tbody > tr:nth-child(odd) td,
+  section table tbody > tr:nth-child(odd) th {
+    background: rgba(67, 69, 59, 0.1); }
+  section[data-marpit-advanced-background=content] {
+    border-right: none; }
+  section.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    section.centered h1,
+    section.centered h2,
+    section.centered h3,
+    section.centered h4,
+    section.centered * {
+      margin: 0;
+      flex-grow: 1; }
+  section.sidecode pre {
+    display: inline-block;
+    float: right;
+    width: 49%;
+    margin: 1em 0 100vh 2%; }
+  section.sidecode ol,
+  section.sidecode ul,
+  section.sidecode p {
+    font-size: 30px;
+    width: 49%; }
+  section.double ol:first-of-type,
+  section.double ul:first-of-type,
+  section.double p:first-of-type,
+  section.double table:first-of-type {
+    display: inline-block;
+    float: right;
+    width: 49%;
+    margin: 2.5rem 0 100vh 2%; }
+  section.double ol:not(:first-of-type),
+  section.double ul:not(:first-of-type),
+  section.double p:not(:first-of-type),
+  section.double table:not(:first-of-type) {
+    display: inline-block;
+    font-size: 30px;
+    width: 49%;
+    margin: 2.5rem 0 0 0; }
+  section.small-text ol,
+  section.small-text ul,
+  section.small-text p,
+  section.small-text tr {
+    font-size: 30px; }
+  section.sidemath p:first-of-type {
+    display: inline-block;
+    border-left: 1px solid #ae4d29;
+    padding-left: 20px;
+    height: 470px;
+    float: right;
+    width: 49%;
+    margin: 1em 0 100vh 2%; }
+  section.sidemath ol,
+  section.sidemath ul,
+  section.sidemath p {
+    font-size: 30px;
+    width: 49%; }
+  section.lead {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border: none;
+    border-left: solid 10px #ae4d29;
+    border-bottom: solid 10px #ae4d29; }
+    section.lead h1 {
+      padding: 1.5em 0; }
+    section.lead h1,
+    section.lead h2,
+    section.lead h3,
+    section.lead h4,
+    section.lead h5,
+    section.lead h6 {
+      text-align: center;
+      color: #009aa6; }
+      section.lead h1 svg[data-marp-fitting="svg"],
+      section.lead h2 svg[data-marp-fitting="svg"],
+      section.lead h3 svg[data-marp-fitting="svg"],
+      section.lead h4 svg[data-marp-fitting="svg"],
+      section.lead h5 svg[data-marp-fitting="svg"],
+      section.lead h6 svg[data-marp-fitting="svg"] {
+        --preserve-aspect-ratio: xMidYMid meet; }
+    section.lead p {
+      text-align: center; }
+    section.lead blockquote > h1,
+    section.lead blockquote > h2,
+    section.lead blockquote > h3,
+    section.lead blockquote > h4,
+    section.lead blockquote > h5,
+    section.lead blockquote > h6,
+    section.lead blockquote > p {
+      text-align: left; }
+    section.lead blockquote svg[data-marp-fitting="svg"]:not([data-marp-fitting-math]) {
+      --preserve-aspect-ratio: xMinYMin meet; }
+    section.lead ul > li > p,
+    section.lead ol > li > p {
+      text-align: left; }
+    section.lead table {
+      margin-left: auto;
+      margin-right: auto; }
 
 footer img {
-  float: right;
-}
+  float: right; }
